@@ -41,7 +41,7 @@ function createDigest(&$analytics) {
     print 'There was an API error : ' . $e->getCode() . ' : ' . $e->getMessage();
 
   } catch (Exception $e) {
-    print 'There wan a general error : ' . $e->getMessage();
+    print 'There was a general error : ' . $e->getMessage();
   }
 }
 
