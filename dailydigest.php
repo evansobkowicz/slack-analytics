@@ -24,8 +24,6 @@ function createDigest(&$analytics) {
 
       $yesterday_pageviews = pageviewsForDates( $analytics, $profileId, $yesterday->format('Y-m-d'), $yesterday->format('Y-m-d') );
 
-      $yesterday->sub(new DateInterval('P1D'));
-
       $lastweek = new DateTime();
       $lastweek->sub(new DateInterval('P8D'));
 
